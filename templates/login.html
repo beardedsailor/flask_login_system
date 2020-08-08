@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+
+</head>
+<body bgcolor="orange">
+<h1 style="text-align: center">Login</h1>
+
+<form method=POST action="{{ url_for('login') }}" style="text-align: center; border: 4px solid black">
+  <h2></h2>Username:<br>
+  <input type="text" name='username' required><br><br>
+  Password:<br>
+  <input  type="password" name='password' required ><br><br>
+<input type="submit" value="Login">
+<br><br>
+</form><br>
+<div style="text-align: center"> Don't have an account? <a href="{{ url_for('register') }}">Sign up here</a>.</div>
+<h1 style="text-align: center">{{info}}</h1>
+
+</body>
+</html>
